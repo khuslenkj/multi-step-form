@@ -3,6 +3,7 @@ import { GlassBackground } from '../glass/GlassBackground';
 
 export const Background = () => {
   return (
+    <div className='absolute w-full h-full'>
   <MicroSlats
     preset="swell"
     color="#A855F7"
@@ -30,8 +31,7 @@ export const Background = () => {
     fog={0.55}
     introDuration={1.5}
     paused={false}
->
-    <GlassBackground/>
-</MicroSlats>
+/>
+    </div>
   )
 }

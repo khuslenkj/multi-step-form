@@ -1,13 +1,13 @@
 import MicroSlats from '@/components/Background/MicroSlats';
 import { Background } from '@/components/Background/Background';
-import { GlassBackground } from '@/components/glass/GlassBackground';
+import { GlassTemplate } from '@/components/glass/GlassTemplate';
 
 
 export default function Home() {
   return (
-<div style={{ width: '100%', height: '100vh', position: 'relative' }}>
+<div className='w-full h-screen relatve flex justify-center items-center'>
   <Background/>
-    <GlassBackground/>
+  <GlassTemplate/>
 </div>
   );
 }
