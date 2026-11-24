@@ -9,10 +9,11 @@ type InputProps = {
     Label: string
     Type: string
     PlaceHolder: string
+    name:string
 }
 
 export const InputField = (props: InputProps) => {
-    const {Label, Type, PlaceHolder} = props
+    const {Label, Type, PlaceHolder, name} = props
   return (
     <Field>
       <FieldLabel htmlFor="input-field-username">{Label}</FieldLabel>
@@ -20,6 +21,7 @@ export const InputField = (props: InputProps) => {
         id="input-field-username"
         type={Type}
         placeholder={PlaceHolder}
+        name={name}
       />
     </Field>
   )
